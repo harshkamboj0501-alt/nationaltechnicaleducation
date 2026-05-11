@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Result Verification Portal</title>
+
+<style>
+body{
+    margin:0;
+    padding:20px;
+    background:#d9d8f0;
+    font-family:Arial, sans-serif;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    background:#fff;
+    border-radius:15px;
+    padding:25px;
+    border:2px solid #333;
+}
+
+h1{
+    text-align:center;
+    color:green;
+    margin-bottom:5px;
+}
+
+h2{
+    text-align:center;
+    margin-top:0;
+    color:#222;
+}
+
+.student-box{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    margin-top:20px;
+    line-height:32px;
+}
+
+.student-box div{
+    width:48%;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table th,
+table td{
+    border:2px dotted #555;
+    padding:10px;
+    text-align:center;
+}
+
+table th{
+    background:#f1f1f1;
+}
+
+.result{
+    font-size:60px;
+    color:green;
+    text-align:center;
+    margin-top:20px;
+    font-weight:bold;
+}
+
+.btn{
+    margin-top:20px;
+    text-align:center;
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    background:green;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:darkgreen;
+}
+
+@media(max-width:700px){
+
+.student-box div{
+    width:100%;
+}
+
+table{
+    font-size:12px;
+}
+
+.result{
+    font-size:40px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>राष्ट्रीय प्रौद्योगिक शिक्षा संस्थान</h1>
+<h2>Certificate & Result Portal</h2>
+
+<div class="student-box">
+
+<div>
+<p><b>Name:</b> Pawan kamboj</p>
+<p><b>Father Name:</b> Mr. Sher Bahadu</p>
+<p><b>Address:</b> Sirsa Haryana</p>
+<p><b>Course:</b> Diploma in Electrical Engineering</p>
+</div>
+
+<div>
+<p><b>Enrollment No:</b> 59013541124321</p>
+<p><b>Admission Date:</b> 15/07/2020</p>
+<p><b>Completion Date:</b> 14/07/2023</p>
+</div>
+
+</div>
+
+<h2>Details of Marks</h2>
+
+<table>
+
+<tr>
+<th>Sr No.</th>
+<th>Subject Name</th>
+<th>Maximum Marks</th>
+<th>Obtained Marks</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Electrical Installation</td>
+<td>100</td>
+<td>92</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Electrical Estimation</td>
+<td>100</td>
+<td>81</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Microprocessors</td>
+<td>100</td>
+<td>91</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>Renewable Energy</td>
+<td>100</td>
+<td>81</td>
+</tr>
+
+<tr>
+<td colspan="2"><b>Total</b></td>
+<td><b>400</b></td>
+<td><b>345</b></td>
+</tr>
+
+</table>
+
+<div class="result">
+PASS
+</div>
+
+<div class="btn">
+<button onclick="window.print()">Print Result</button>
+</div>
+
+</div>
+
+</body>
+</html>
