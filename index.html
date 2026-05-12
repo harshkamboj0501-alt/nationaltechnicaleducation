@@ -7,115 +7,141 @@
 
 <style>
 
-/* MOBILE RESPONSIVE VIEW */
-
-@media screen and (max-width:768px){
-
 body{
-    padding:8px;
-    background:#d8d8f0;
+    margin:0;
+    padding:20px;
+    background:#d7d6f1;
+    font-family:Arial, sans-serif;
 }
 
 .container{
-    width:100%;
-    max-width:100%;
-    border-radius:18px;
-    padding:12px;
+    max-width:900px;
+    margin:auto;
+    background:#fff;
+    border:2px solid #222;
+    border-radius:30px;
+    padding:25px;
 }
 
 .title{
-    font-size:20px;
-    line-height:30px;
+    text-align:center;
+    color:green;
+    font-size:35px;
+    font-weight:bold;
 }
 
 .subtitle{
-    font-size:15px;
-    margin-top:8px;
-    margin-bottom:15px;
-}
-
-/* Student Details */
-
-.student-box{
-    padding:10px;
-}
-
-.student-flex{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    gap:8px;
-}
-
-.left{
-    width:48%;
-    font-size:10px;
-    line-height:22px;
-}
-
-.center{
-    width:32%;
-    font-size:9px;
     text-align:center;
-    line-height:18px;
+    font-size:28px;
+    margin-top:10px;
+    color:#111;
 }
 
+.student-details{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.left,
 .right{
-    width:20%;
-    text-align:right;
+    width:50%;
+    line-height:35px;
+    font-size:20px;
 }
 
 .photo{
-    width:55px;
-    height:65px;
+    width:80px;
+    height:95px;
+    border:1px solid #999;
     object-fit:cover;
 }
 
-/* Marks Table */
-
 .heading{
-    font-size:18px;
+    text-align:center;
+    font-size:42px;
+    font-weight:bold;
     margin-top:20px;
 }
 
-.table-wrapper{
-    overflow-x:auto;
-}
-
 table{
-    min-width:500px;
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
 }
 
 table th,
 table td{
-    font-size:9px;
-    padding:5px;
+    border:2px dotted #555;
+    padding:12px;
+    font-size:18px;
 }
 
-/* PASS WATERMARK */
+table th{
+    background:#f3f3f3;
+}
 
 .pass{
-    font-size:35px;
-    bottom:100px;
+    position:absolute;
+    font-size:90px;
+    color:rgba(0,180,0,0.7);
+    font-weight:bold;
+    transform:rotate(-7deg);
+    left:60%;
+    margin-top:-90px;
 }
 
-/* Bottom Section */
-
 .bottom{
+    margin-top:20px;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    margin-top:15px;
-    gap:8px;
 }
 
 .back-link{
-    font-size:12px;
+    color:#4b0082;
+    font-size:22px;
 }
 
 .print-btn{
-    font-size:11px;
-    padding:5px 12px;
+    padding:8px 20px;
+    border:none;
+    background:#ddd;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+@media(max-width:768px){
+
+.left,
+.right{
+    width:100%;
+    font-size:15px;
+    line-height:28px;
+}
+
+.title{
+    font-size:24px;
+}
+
+.subtitle{
+    font-size:20px;
+}
+
+table th,
+table td{
+    font-size:12px;
+    padding:8px;
+}
+
+.pass{
+    font-size:55px;
+    margin-top:-50px;
+}
+
+.back-link{
+    font-size:16px;
 }
 
 }
@@ -153,13 +179,7 @@ body{
     font-family:"Times New Roman", serif;
 }
 
-.main-box{
-    width:95%;
-    margin:auto;
-    background:#fff;
-    border:2px solid #44;
-    padding:20px;
-}
+
 
 .top-section{
     display:flex;
