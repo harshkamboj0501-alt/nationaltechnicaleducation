@@ -1,58 +1,76 @@
-
-<!DOCTYPE html>
+DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Certificate Verification Portal</title>
 
 <style>
 
+*{
+    box-sizing:border-box;
+}
+
 body{
     margin:0;
-    padding:20px;
+    padding:10px;
     background:#d7d6f1;
-    font-family:Arial, sans-serif;
+    font-family:"Times New Roman", serif;
+    overflow-x:hidden;
 }
 
 .container{
+    width:100%;
     max-width:900px;
     margin:auto;
     background:#fff;
     border:2px solid #222;
-    border-radius:15px;
-    padding:25px;
+    border-radius:20px;
+    padding:20px;
 }
 
 .title{
     text-align:center;
     color:green;
-    font-size:35px;
+    font-size:40px;
     font-weight:bold;
+    margin-top:15px;
 }
 
 .subtitle{
     text-align:center;
-    font-size:28px;
-    margin-top:10px;
-    color:#111;
-}
-
-.student-details{
-    display:flex;
-    justify-content:space-between;
-    flex-wrap:wrap;
+    font-size:32px;
     margin-top:25px;
+    margin-bottom:40px;
 }
 
-.left,
-.right{
-    width:48%;
-    line-height:35px;
-    font-size:20px;
+.top-section{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    gap:15px;
 }
 
-.photo{
+.left-side{
+    flex:1;
+    min-width:250px;
+    font-size:18px;
+    line-height:45px;
+}
+
+.center-side{
+    width:220px;
+    text-align:center;
+    font-size:18px;
+}
+
+.right-side{
+    width:110px;
+    text-align:center;
+}
+
+.right-side img{
     width:100px;
     height:120px;
     border:1px solid #999;
@@ -60,16 +78,15 @@ body{
 }
 
 .heading{
-    text-align:center;
-    font-size:22px;
+    font-size:24px;
     font-weight:bold;
-    margin-top:10px;
+    margin-bottom:15px;
 }
 
 table{
     width:100%;
     border-collapse:collapse;
-    margin-top:10px;
+    margin-top:30px;
 }
 
 table th,
@@ -83,36 +100,34 @@ table th{
     background:#f3f3f3;
 }
 
-
-
 .bottom{
-    margin-top:20px;
+    margin-top:25px;
     display:flex;
     justify-content:space-between;
     align-items:center;
+    flex-wrap:wrap;
+    gap:10px;
 }
 
 .back-link{
+    font-size:20px;
     color:#4b0082;
-    font-size:22px;
+    text-decoration:none;
 }
 
 .print-btn{
-    padding:8px 20px;
+    padding:10px 20px;
     border:none;
-    background:#ddd;
-    cursor:pointer;
     border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.print-btn:hover{
+    background:#ccc;
 }
 
 @media(max-width:768px){
-
-.left,
-.right{
-    width:100%;
-    font-size:15px;
-    line-height:28px;
-}
 
 .title{
     font-size:24px;
@@ -122,19 +137,39 @@ table th{
     font-size:20px;
 }
 
+.left-side{
+    font-size:14px;
+    line-height:32px;
+}
+
+.center-side{
+    width:100%;
+    text-align:left;
+    font-size:15px;
+}
+
+.right-side{
+    width:100%;
+}
+
+.right-side img{
+    width:80px;
+    height:95px;
+}
+
+table{
+    display:block;
+    overflow-x:auto;
+}
+
 table th,
 table td{
-    font-size:12px;
+    font-size:13px;
     padding:8px;
 }
 
-.pass{
-    font-size:55px;
-    margin-top:-50px;
-}
-
 .back-link{
-    font-size:16px;
+    font-size:15px;
 }
 
 }
@@ -445,4 +480,3 @@ Print this page
 </a>
 </body>
 </html>
-
